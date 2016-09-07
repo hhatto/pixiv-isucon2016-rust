@@ -1,0 +1,37 @@
+[package]
+name = "rustwebapp"
+version = "0.1.0"
+authors = ["admin <test@example.com>"]
+
+[dependencies]
+nickel = "0.8.1"
+mysql = "*"
+serde = "0.8"
+regex = "0.1"
+time = "*"
+rustc-serialize = "0.3"
+rand = "0.3"
+mime = "*"
+
+[dependencies.hyper]
+version = "0.8"
+default-features = false
+
+[dependencies.nickel_mysql]
+git = "https://github.com/hhatto/nickel-mysql.git"
+
+[dependencies.nickel-jwt-session]
+git = "https://github.com/kaj/nickel-jwt-session.git"
+
+[dependencies.nickel_tera]
+git = "https://github.com/hhatto/nickel-tera.git"
+branch = "use-tera-master"
+#path = "/home/isucon/nickel-tera"
+
+[dependencies.tera]
+git = "https://github.com/Keats/tera.git"
+#path = "/home/isucon/tera"
+
+[dependencies.multipart]
+version = "0.7"
+features = ["nickel_"]
